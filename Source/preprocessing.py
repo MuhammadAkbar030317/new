@@ -6,44 +6,6 @@ from sklearn.preprocessing import OrdinalEncoder
 from sklearn.impute import IterativeImputer
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
-# class Preprocessor:
-#     def __init__(self, df, target_col):
-#         self.df = df.copy()
-#         self.target_col = target_col
-#     def drop_columns(self):
-#         drop_cols = ['agent', 'company']
-#         self.df = self.df.drop(columns=drop_cols, errors='ignore')
-#         print("agent va company ustunlari olib tashlandi")
-#         return self.df
-
-#     def encoding(self):
-#         cat_cols = self.df.select_dtypes(include=['object']).columns
-#         encoder = OrdinalEncoder(handle_unknown='use_encoded_value',unknown_value=-1)
-#         self.df[cat_cols] = encoder.fit_transform(self.df[cat_cols])
-#         print(" Encoding OrdinalEncoder bilan bajarildi")
-#         return self.df
-#     def advanced_imputation(self):
-#         X = self.df.drop(self.target_col, axis=1)
-#         y = self.df[self.target_col]
-#         imputer = IterativeImputer(estimator=LinearRegression(n_jobs=-1),max_iter=10)
-#         X_imputed = imputer.fit_transform(X)
-#         self.df[X.columns] = X_imputed
-#         self.df[self.target_col] = y
-#         print("Missing values LinearRegression + IterativeImputer bilan to‘ldirildi")
-#         return self.df
-#     def scale_data(self):
-#         scaler = StandardScaler()
-#         X = self.df.drop(self.target_col, axis=1)
-#         self.df[X.columns] = scaler.fit_transform(X)
-#         print("Scaling bajarildi")
-#         return self.df
-#     def save_data(self, path):
-#         os.makedirs(os.path.dirname(path), exist_ok=True)
-#         self.df.to_csv(path, index=False)
-#         print(f"Preprocessed data saqlandi: {path}")
-#         return self.df
-    
-
 
 class Preprocessor:
     def __init__(self, df, target_col):

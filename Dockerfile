@@ -2,7 +2,7 @@
 FROM python:3.10-slim
 
 # 2️⃣ Work directory
-WORKDIR /app
+WORKDIR /App
 
 # 3️⃣ System dependencies (minimal)
 RUN apt-get update && apt-get install -y \

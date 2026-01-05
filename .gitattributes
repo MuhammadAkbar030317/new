@@ -1,3 +1,6 @@
 *[[:space:]].csv filter=lfs diff=lfs merge=lfs -text
 *[[:space:]].joblib filter=lfs diff=lfs merge=lfs -text
 *[[:space:]].pkl filter=lfs diff=lfs merge=lfs -text
+[[:space:]].csv filter=lfs diff=lfs merge=lfs -text
+[[:space:]].joblib filter=lfs diff=lfs merge=lfs -text
+[[:space:]].pkl filter=lfs diff=lfs merge=lfs -text

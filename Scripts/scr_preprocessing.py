@@ -1,12 +1,12 @@
 import sys
 import pandas as pd
-sys.path.append(r"C:\Users\User\Desktop\AI_Projects\Project_09\Source")
+sys.path.append(r"C:\Users\User\Desktop\Project_09\Source")
 from preprocessing import Preprocessor
 
-df=pd.read_csv(r"C:\Users\User\Desktop\AI_Projects\Project_09\Data\Raw\hotel_bookings_updated_2024.csv")
+df=pd.read_csv(r"C:\Users\User\Desktop\Project_09\Data\Raw\hotel_bookings_updated_2024.csv")
 
 pre=Preprocessor(df=df,target_col="is_canceled")
-path = r"C:\Users\User\Desktop\AI_Projects\Project_09\Data\Preprocessed\preprocessed.csv"
+path = r"C:\Users\User\Desktop\Project_09\Data\Preprocessed\preprocessed.csv"
 
 pre.split()
 pre.drop_columns()

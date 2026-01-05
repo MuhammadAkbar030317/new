@@ -1,9 +1,9 @@
 import pandas as pd
 import sys 
-sys.path.append(r"C:\Users\User\Desktop\AI_Projects\Project_09\Source")
+sys.path.append(r"C:\Users\User\Desktop\Project_09\Source")
 from tuning import Tuning
 
-df = pd.read_csv(r"C:\Users\User\Desktop\AI_Projects\Project_09\Data\Preprocessed\preprocessed.csv")
+df = pd.read_csv(r"C:\Users\User\Desktop\Project_09\Data\Preprocessed\preprocessed.csv")
 
 trainer = Tuning(df, target_col="is_canceled")
 
@@ -14,4 +14,4 @@ trainer.bagging()
 trainer.xgboost()
 trainer.lightgbm()
 
-trainer.save_results(r"C:\Users\User\Desktop\AI_Projects\Project_09\Results")
+trainer.save_results(r"C:\Users\User\Desktop\Project_09\Results")

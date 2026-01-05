@@ -1,9 +1,9 @@
 import pandas as pd
 import sys 
-sys.path.append(r"C:\Users\User\Desktop\AI_Projects\Project_09\Source")
+sys.path.append(r"C:\Users\User\Desktop\Project_09\Source")
 from training import Trainer
-df=pd.read_csv(r"C:\Users\User\Desktop\AI_Projects\Project_09\Data\Preprocessed\preprocessed.csv")
-PATH = r"C:\Users\User\Desktop\AI_Projects\Project_09\Results"
+df=pd.read_csv(r"C:\Users\User\Desktop\Project_09\Data\Preprocessed\preprocessed.csv")
+PATH = r"C:\Users\User\Desktop\Project_09\Results"
 trainer = Trainer(df)
 trainer.dt()
 trainer.rf()
